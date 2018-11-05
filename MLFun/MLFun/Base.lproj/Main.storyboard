@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OhF-rc-xr2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--What is this??-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golf" translatesAutoresizingMaskIntoConstraints="NO" id="wn1-ii-FFw">
+                                <rect key="frame" x="10" y="74" width="355" height="453"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confidente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-6b-usf">
+                                <rect key="frame" x="96.5" y="597" width="182" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="object object object object object object object object object object " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vkt-sQ-Fi0">
+                                <rect key="frame" x="10" y="537" width="355" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="49G-HR-bAm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vkt-sQ-Fi0" secondAttribute="trailing" constant="10" id="DGY-rV-k1c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wn1-ii-FFw" secondAttribute="trailing" constant="10" id="KEq-f3-85c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CVM-6b-usf" secondAttribute="bottom" constant="28" id="NDt-iJ-oUm"/>
+                            <constraint firstItem="Vkt-sQ-Fi0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Sjo-A8-hKw"/>
+                            <constraint firstItem="CVM-6b-usf" firstAttribute="top" secondItem="Vkt-sQ-Fi0" secondAttribute="bottom" constant="15" id="bNI-Cq-l2b"/>
+                            <constraint firstItem="wn1-ii-FFw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dGc-Fx-cZW"/>
+                            <constraint firstItem="CVM-6b-usf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKX-mk-MJ9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wn1-ii-FFw" secondAttribute="bottom" constant="140" id="e4L-XB-WCP"/>
+                            <constraint firstItem="Vkt-sQ-Fi0" firstAttribute="top" secondItem="wn1-ii-FFw" secondAttribute="bottom" constant="10" id="l5N-7A-Sui"/>
+                            <constraint firstItem="wn1-ii-FFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uTb-Q7-LlT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="What is this??" id="m7k-zt-ONb">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="2my-ze-bwp">
+                                <connections>
+                                    <action selector="cameraBarBtnAction:" destination="BYZ-38-t0r" id="RI6-RH-smW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="yTg-Yu-GIu">
+                                <connections>
+                                    <action selector="libraryBarBtnAction:" destination="BYZ-38-t0r" id="y9m-tv-cGc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="confidentLabel" destination="CVM-6b-usf" id="fnF-1o-6E5"/>
+                        <outlet property="objectImageView" destination="wn1-ii-FFw" id="y8T-Ff-eFc"/>
+                        <outlet property="objectLabel" destination="Vkt-sQ-Fi0" id="X9c-UH-MId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iIT-KA-Z0U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OhF-rc-xr2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nYy-bc-dO5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9hK-h5-hfB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFZ-vB-wt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="golf" width="600" height="550"/>
+    </resources>
+</document>

@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		454E065B210BCB33003C4601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E065A210BCB33003C4601 /* AppDelegate.swift */; };
+		454E065D210BCB33003C4601 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E065C210BCB33003C4601 /* ViewController.swift */; };
+		454E0660210BCB33003C4601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454E065E210BCB33003C4601 /* Main.storyboard */; };
+		454E0662210BCB45003C4601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E0661210BCB45003C4601 /* Assets.xcassets */; };
+		454E0665210BCB45003C4601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454E0663210BCB45003C4601 /* LaunchScreen.storyboard */; };
+		454E0673210BCB9A003C4601 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E0672210BCB9A003C4601 /* KeyboardViewController.swift */; };
+		454E0677210BCB9A003C4601 /* Groot.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 454E0670210BCB9A003C4601 /* Groot.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		454E067D210BCD18003C4601 /* groot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 454E067C210BCD18003C4601 /* groot.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		454E0675210BCB9A003C4601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 454E064F210BCB33003C4601 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454E066F210BCB9A003C4601;
+			remoteInfo = Groot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		454E067B210BCB9A003C4601 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				454E0677210BCB9A003C4601 /* Groot.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		454E0657210BCB33003C4601 /* GrootKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrootKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454E065A210BCB33003C4601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		454E065C210BCB33003C4601 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		454E065F210BCB33003C4601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		454E0661210BCB45003C4601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		454E0664210BCB45003C4601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		454E0666210BCB45003C4601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454E0670210BCB9A003C4601 /* Groot.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Groot.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		454E0672210BCB9A003C4601 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		454E0674210BCB9A003C4601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454E067C210BCD18003C4601 /* groot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groot.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		454E0654210BCB33003C4601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454E066D210BCB9A003C4601 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		454E064E210BCB33003C4601 = {
+			isa = PBXGroup;
+			children = (
+				454E0659210BCB33003C4601 /* GrootKeyboard */,
+				454E0671210BCB9A003C4601 /* Groot */,
+				454E0658210BCB33003C4601 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		454E0658210BCB33003C4601 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				454E0657210BCB33003C4601 /* GrootKeyboard.app */,
+				454E0670210BCB9A003C4601 /* Groot.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		454E0659210BCB33003C4601 /* GrootKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				454E065A210BCB33003C4601 /* AppDelegate.swift */,
+				454E065C210BCB33003C4601 /* ViewController.swift */,
+				454E065E210BCB33003C4601 /* Main.storyboard */,
+				454E0661210BCB45003C4601 /* Assets.xcassets */,
+				454E0663210BCB45003C4601 /* LaunchScreen.storyboard */,
+				454E0666210BCB45003C4601 /* Info.plist */,
+			);
+			path = GrootKeyboard;
+			sourceTree = "<group>";
+		};
+		454E0671210BCB9A003C4601 /* Groot */ = {
+			isa = PBXGroup;
+			children = (
+				454E067C210BCD18003C4601 /* groot.jpg */,
+				454E0672210BCB9A003C4601 /* KeyboardViewController.swift */,
+				454E0674210BCB9A003C4601 /* Info.plist */,
+			);
+			path = Groot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		454E0656210BCB33003C4601 /* GrootKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454E0669210BCB45003C4601 /* Build configuration list for PBXNativeTarget "GrootKeyboard" */;
+			buildPhases = (
+				454E0653210BCB33003C4601 /* Sources */,
+				454E0654210BCB33003C4601 /* Frameworks */,
+				454E0655210BCB33003C4601 /* Resources */,
+				454E067B210BCB9A003C4601 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				454E0676210BCB9A003C4601 /* PBXTargetDependency */,
+			);
+			name = GrootKeyboard;
+			productName = GrootKeyboard;
+			productReference = 454E0657210BCB33003C4601 /* GrootKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		454E066F210BCB9A003C4601 /* Groot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454E0678210BCB9A003C4601 /* Build configuration list for PBXNativeTarget "Groot" */;
+			buildPhases = (
+				454E066C210BCB9A003C4601 /* Sources */,
+				454E066D210BCB9A003C4601 /* Frameworks */,
+				454E066E210BCB9A003C4601 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Groot;
+			productName = Groot;
+			productReference = 454E0670210BCB9A003C4601 /* Groot.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		454E064F210BCB33003C4601 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ISA;
+				TargetAttributes = {
+					454E0656210BCB33003C4601 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					454E066F210BCB9A003C4601 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 454E0652210BCB33003C4601 /* Build configuration list for PBXProject "GrootKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 454E064E210BCB33003C4601;
+			productRefGroup = 454E0658210BCB33003C4601 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				454E0656210BCB33003C4601 /* GrootKeyboard */,
+				454E066F210BCB9A003C4601 /* Groot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		454E0655210BCB33003C4601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454E0665210BCB45003C4601 /* LaunchScreen.storyboard in Resources */,
+				454E0662210BCB45003C4601 /* Assets.xcassets in Resources */,
+				454E0660210BCB33003C4601 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454E066E210BCB9A003C4601 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454E067D210BCD18003C4601 /* groot.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		454E0653210BCB33003C4601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454E065D210BCB33003C4601 /* ViewController.swift in Sources */,
+				454E065B210BCB33003C4601 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454E066C210BCB9A003C4601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454E0673210BCB9A003C4601 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		454E0676210BCB9A003C4601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454E066F210BCB9A003C4601 /* Groot */;
+			targetProxy = 454E0675210BCB9A003C4601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		454E065E210BCB33003C4601 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454E065F210BCB33003C4601 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		454E0663210BCB45003C4601 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454E0664210BCB45003C4601 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		454E0667210BCB45003C4601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		454E0668210BCB45003C4601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		454E066A210BCB45003C4601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83SR592X38;
+				INFOPLIST_FILE = GrootKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.GrootKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		454E066B210BCB45003C4601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83SR592X38;
+				INFOPLIST_FILE = GrootKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.GrootKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		454E0679210BCB9A003C4601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83SR592X38;
+				INFOPLIST_FILE = Groot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.GrootKeyboard.Groot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		454E067A210BCB9A003C4601 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83SR592X38;
+				INFOPLIST_FILE = Groot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.isa.GrootKeyboard.Groot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		454E0652210BCB33003C4601 /* Build configuration list for PBXProject "GrootKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454E0667210BCB45003C4601 /* Debug */,
+				454E0668210BCB45003C4601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454E0669210BCB45003C4601 /* Build configuration list for PBXNativeTarget "GrootKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454E066A210BCB45003C4601 /* Debug */,
+				454E066B210BCB45003C4601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		454E0678210BCB9A003C4601 /* Build configuration list for PBXNativeTarget "Groot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454E0679210BCB9A003C4601 /* Debug */,
+				454E067A210BCB9A003C4601 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 454E064F210BCB33003C4601 /* Project object */;
+}

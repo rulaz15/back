@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eCZ-hr-2VU">
+                                <rect key="frame" x="80" y="33" width="215" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eCZ-hr-2VU" secondAttribute="height" multiplier="1:1" id="K8m-oM-Oog"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-dA-Rx4">
+                                <rect key="frame" x="151" y="283" width="73" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2cL-BO-DC2">
+                                <rect key="frame" x="159" y="338.5" width="57" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV8-Gv-J7K">
+                                        <rect key="frame" x="2" y="0.0" width="53" height="30"/>
+                                        <state key="normal" title="Choose"/>
+                                        <connections>
+                                            <action selector="chooseBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYG-S9-ATs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdI-vn-VS1">
+                                        <rect key="frame" x="0.0" y="40" width="57" height="30"/>
+                                        <state key="normal" title="Random"/>
+                                        <connections>
+                                            <action selector="randomBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soR-Np-Zw7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ln7-eU-41h">
+                                        <rect key="frame" x="6.5" y="80" width="44" height="30"/>
+                                        <state key="normal" title="Select"/>
+                                        <connections>
+                                            <action selector="playPauseBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOA-pI-myf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2cL-BO-DC2" firstAttribute="top" secondItem="t1Y-dA-Rx4" secondAttribute="bottom" constant="35" id="5lE-tC-p5n"/>
+                            <constraint firstItem="t1Y-dA-Rx4" firstAttribute="top" secondItem="eCZ-hr-2VU" secondAttribute="bottom" constant="35" id="AQb-tm-ha4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCZ-hr-2VU" secondAttribute="trailing" constant="80" id="Jnh-SK-88r"/>
+                            <constraint firstItem="t1Y-dA-Rx4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Khl-qb-aMb"/>
+                            <constraint firstItem="eCZ-hr-2VU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="MS4-Xp-xOK"/>
+                            <constraint firstItem="2cL-BO-DC2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NOI-7A-XXI"/>
+                            <constraint firstItem="eCZ-hr-2VU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="bDD-Fy-p5z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artImageView" destination="eCZ-hr-2VU" id="9hZ-YV-43I"/>
+                        <outlet property="playPauseBtn" destination="ln7-eU-41h" id="ADl-iw-zHz"/>
+                        <outlet property="songTitleLabel" destination="t1Y-dA-Rx4" id="y0J-qM-Inu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
